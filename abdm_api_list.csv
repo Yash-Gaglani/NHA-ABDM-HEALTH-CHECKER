@@ -1,0 +1,10 @@
+api_name,base_url,endpoint,method,request_params,request_body,request_headers
+abdm_session,{{abdm_gateway_url}},/v0.5/sessions,POST,,"{
+        ""clientId"": """",
+        ""clientSecret"": """"
+    }",
+v1_reg_generate_aadhaar_otp,{{abdm_abha_url}},/v1/registration/aadhaar/generateOtp,POST,,"{""aadhaar"":""""}",
+v1_reg_resend_aadhaar_otp,{{abdm_abha_url}},/v1/registration/aadhaar/resendAadhaarOtp,POST,,"{""txnId"":""""}",
+v1_reg_verify_aadhaar_otp,{{abdm_abha_url}},/v1/registration/aadhaar/verifyOTP,POST,,"{""txnId"":"""", ""otp"":""""}",
+v1_reg_create_hid_pre_verified,{{abdm_abha_url}},/v1/registration/aadhaar/createHealthIdWithPreVerified,POST,,"{""txnId"":""""}",
+v1_reg_generate_mobile_otp,{{abdm_abha_url}},/v1/registration/aadhaar/generateMobileOTP,POST,,"{""txnId"":"""", ""mobile"":""""}",
